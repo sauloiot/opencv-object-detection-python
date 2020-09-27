@@ -10,7 +10,7 @@ while True:
     #print(frame)
 
     frameCinza = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    facesDetectada = classificadorFace.detectMultiScale(frameCinza)
+    facesDetectada = classificadorFace.detectMultiScale(frameCinza, minSize=(30,30))
     for (x,y,l,a) in facesDetectada:
         cv2.rectangle(frame, (x,y), (x + l, y + a), (0,255,00,2),5)
 

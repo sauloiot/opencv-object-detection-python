@@ -1,2 +1,6 @@
 /env
 .idea
+fotos/*
+/examples/classificadorEigen.yml
+/examples/classificadorFisherface.yml
+/examples/classificadorLBPH.yml

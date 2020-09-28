@@ -6,7 +6,7 @@ classificador = cv2.CascadeClassifier('../cascades/haarcascade_frontalface_defau
 classificadorOlhos = cv2.CascadeClassifier('../cascades/haarcascade_eye.xml')
 camera = cv2.VideoCapture(0)
 amostra = 1
-numeroAmostras = 5
+numeroAmostras = 25
 id = input('Digite seu identificador: ')
 largura, altura = 220, 220
 print("capturando as faces .....")

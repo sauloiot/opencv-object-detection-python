@@ -28,10 +28,10 @@ print("Treinando")
 eigenface.train(faces, ids)
 eigenface.write('classificadorEigen.yml')
 
-fisherface.train(faces, ids)
-fisherface.write('classificadorFisherface.yml')
+#fisherface.train(faces, ids)
+#fisherface.write('classificadorFisherface.yml')
 
-lbph.train(faces, ids)
-lbph.write('classificadorLBPH.yml')
+#lbph.train(faces, ids)
+#lbph.write('classificadorLBPH.yml')
 
 print("Treinamento realizado")

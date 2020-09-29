@@ -1,4 +1,4 @@
-from examples import exemplo4, exemplo1, exemplo2, exemplo3
+from src import exemplo4, exemplo1, exemplo2, exemplo3
 
 print('1: detecção facil por imagem v1')
 print('2: detecção facil por imagem v2')

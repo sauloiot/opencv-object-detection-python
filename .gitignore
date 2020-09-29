@@ -1,6 +1,6 @@
 /env
 .idea
 fotos/*
-/examples/classificadorEigen.yml
-/examples/classificadorFisherface.yml
-/examples/classificadorLBPH.yml
+/src/classificadorEigen.yml
+/src/classificadorFisherface.yml
+/src/classificadorLBPH.yml

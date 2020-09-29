@@ -3,7 +3,7 @@ import cv2
 def run():
     classificador = cv2.CascadeClassifier('../cascades/haarcascade_frontalface_default.xml')
 
-    imagem = cv2.imread('../images/pessoas/pessoas2.jpg')
+    imagem = cv2.imread('../../images/pessoas/pessoas2.jpg')
     imagemCinza = cv2.cvtColor(imagem, cv2.COLOR_BGR2GRAY)
 
     facesDetectadas = classificador.detectMultiScale(imagemCinza, scaleFactor=1.1, minNeighbors=7, minSize=(30,30))

@@ -4,7 +4,7 @@ def run():
     classificadorFace = cv2.CascadeClassifier('../cascades/haarcascade_frontalface_default.xml')
     classificadorOlhos = cv2.CascadeClassifier('../cascades/haarcascade_eye.xml')
 
-    imagem = cv2.imread('../images/pessoas/pessoas3.jpg')
+    imagem = cv2.imread('../../images/pessoas/pessoas3.jpg')
     imagemCinza = cv2.cvtColor(imagem, cv2.COLOR_BGR2GRAY)
 
     facesDetectadas = classificadorFace.detectMultiScale(imagemCinza)

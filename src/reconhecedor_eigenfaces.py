@@ -13,6 +13,7 @@ while (True):
     facesDetectadas = detectorFace.detectMultiScale(imagemCinza,
                                                     scaleFactor=1.1,
                                                     minSize=(5,5))
+
     for (x, y, l, a) in facesDetectadas:
         imagemFace = cv2.resize(imagemCinza[y:y + a, x:x + l], (largura, altura))
         cv2.rectangle(imagem, (x, y), (x + l, y + a), (0,0,255), 2)
@@ -22,10 +23,7 @@ while (True):
             nome = 'Saulo'
         elif id == 2:
             nome = 'Ricardo'
-        elif id == 3:
-            nome = 'Arnaldo'
-        elif id == 4:
-            nome = 'Valdick'
+
         cv2.putText(imagem, nome, (x,y +(a+30)), font, 2, (0,0,255))
         cv2.putText(imagem, str(confianca), (x,y + (a+50)), font, 1, (0,0,255))
 
